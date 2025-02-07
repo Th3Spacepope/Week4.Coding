@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding 4 | MUST 4707</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;color:#4920aa; background-color: #f3692f}
+        h1, h2, h3 { color: #2ff369; }
+        a {color: #f5d36f;}
+        code { color: #000000; background-color: #FFFFFF; padding: 2px 4px; border-radius: 4px;}
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+<h1 id="-coding-4-must-4707-"><strong>Coding 4 | MUST 4707</strong></h1>
+<p><a href="#accessing-the-assignment-materials">How to Access Assignment Materials</a></p>
+<h2 id="-objectives-"><strong>Objectives</strong></h2>
+<ul>
+    <li><p><strong>Understanding variable declaration and reassignment</strong></p>
+        <ul>
+            <li>Using <code>let</code> and <code>const</code>, understanding mutability and scope.</li>
+        </ul>
+    </li>
+    <li><p><strong>Array creation and modification</strong></p>
+        <ul>
+            <li>Declaring arrays, adding/removing elements, and modifying specific indexes.</li>
+        </ul>
+    </li>
+    <li><p><strong>Using <code>while</code> loops for iteration</strong></p>
+        <ul>
+            <li>Iterating through arrays without using <code>for</code> loops, reinforcing manual loop control.</li>
+        </ul>
+    </li>
+    <li><p><strong>Data type checking with <code>typeof</code></strong></p>
+        <ul>
+            <li>Checking and understanding JavaScript data types dynamically.</li>
+        </ul>
+    </li>
+    <li><p><strong>Conditional logic for modifying array elements</strong></p>
+        <ul>
+            <li>Using <code>if</code> statements inside loops to modify array values based on conditions.</li>
+        </ul>
+    </li>
+</ul>
+<hr>
+<h2 id="-instructions-"><strong>Instructions</strong></h2>
+<h3 id="-step-1-set-up-your-project-"><strong>Step 1: Set Up Your Project</strong></h3>
+<ol>
+    <li>Open your <strong>code editor</strong>.</li>
+    <li><strong>Edit the HTML file</strong> (<code>index.html</code>):<ul>
+        <li>Inside the <code>&lt;head&gt;</code> tag, add a <code>&lt;script&gt;</code> tag that links to an external JavaScript file (<code>script.js</code>) and make sure that it is <code>type=&quot;module&quot;</code>.</li>
+    </ul>
+    </li>
+    <li><strong>Open the JavaScript file</strong> (<code>script.js</code>).</li>
+</ol>
+<hr>
+<h3 id="-step-2-declare-variables-let-and-const-"><strong>Step 2: Declare Variables (<code>let</code> and <code>const</code>)</strong></h3>
+<ol>
+    <li>Inside <code>script.js</code>, declare two variables:<ul>
+        <li>A <code>let</code> variable named <code>myLetVariable</code> with the value <code>&quot;Hello&quot;</code>.</li>
+        <li>A <code>const</code> variable named <code>myConstVariable</code> with the value <code>42</code>.</li>
+    </ul>
+    </li>
+    <li><strong>Try reassigning</strong> <code>myConstVariable</code> to a different value (this will cause an error).<ul>
+        <li>Observe the error in the <strong>browser console</strong>.</li>
+        <li>Comment out that line afterward to remove the error.</li>
+    </ul>
+    </li>
+</ol>
+<hr>
+<h3 id="-step-3-create-and-modify-an-array-"><strong>Step 3: Create and Modify an Array</strong></h3>
+<ol>
+    <li><p>Create an array named <code>myArray</code> with the following three elements:</p>
+        <ul>
+            <li>A number (<code>10</code>)</li>
+            <li>A string (<code>&quot;banana&quot;</code>)</li>
+            <li>A boolean (<code>true</code>)</li>
+        </ul>
+    </li>
+    <li><p><strong>Modify <code>myArray</code></strong>:</p>
+        <ul>
+            <li>Add two new elements using <code>.push()</code>:<ul>
+                <li>An array <code>[1, 2, 3]</code></li>
+                <li>A string <code>&quot;added string&quot;</code></li>
+            </ul>
+            </li>
+            <li>Remove the <strong>first element</strong> using <code>.shift()</code>.</li>
+            <li>Change the <strong>second element</strong> (<code>index 1</code>) to the number <code>345</code>.</li>
+            <li>Replace the <strong>last element</strong> in the array with <code>false</code>.</li>
+        </ul>
+    </li>
+</ol>
+<hr>
+<h3 id="-step-4-print-the-array-elements-individually-"><strong>Step 4: Print the Array Elements Individually</strong></h3>
+<ol>
+    <li>Use a <code>while</code> loop to iterate through <code>myArray</code> and log each element to the console:<ul>
+        <li>Declare a new <code>let</code> variable named <code>i</code> and assign it the value <code>0</code> (this will be your iterator).</li>
+        <li>Create a <code>while</code> loop that runs as long as <code>i</code> is less than the length of <code>myArray</code>.</li>
+        <li>On each iteration, access and log the element in <code>myArray</code> at index <code>i</code>.</li>
+    </ul>
+    </li>
+    <li><strong>Run the script</strong> and check the console for the output.</li>
+</ol>
+<hr>
+<h3 id="-step-5-check-data-types-in-the-array-"><strong>Step 5: Check Data Types in the Array</strong></h3>
+<ol>
+    <li>Use another <code>while</code> loop to print the <strong>data type</strong> of each element in <code>myArray</code>.</li>
+</ol>
+<hr>
+<h3 id="-step-6-create-another-array-"><strong>Step 6: Create Another Array</strong></h3>
+<ol>
+    <li>Create a new array named <code>myScale</code> with the following seven elements:<pre><code>[<span class="hljs-string">"C"</span>, <span class="hljs-string">"D"</span>, <span class="hljs-string">"E"</span>, <span class="hljs-string">"F"</span>, <span class="hljs-string">"G"</span>, <span class="hljs-string">"A"</span>, <span class="hljs-string">"B"</span>]
+</code></pre></li>
+</ol>
+<hr>
+<h3 id="-step-7-check-data-types-in-the-myscale-array-"><strong>Step 7: Check Data Types in the <code>myScale</code> Array</strong></h3>
+<ol>
+    <li>Use a <code>while</code> loop to print the <strong>data type</strong> of each element in <code>myScale</code>.</li>
+</ol>
+<hr>
+<h3 id="-step-8-print-the-whole-array-"><strong>Step 8: Print the Whole Array</strong></h3>
+<ol>
+    <li>Print the entire <code>myScale</code> array to the console.</li>
+</ol>
+<hr>
+<h3 id="-step-9-modify-myscale-values-based-on-their-value-"><strong>Step 9: Modify <code>myScale</code> Values Based on Their Value</strong></h3>
+<ol>
+    <li>Use a <code>while</code> loop to modify values based on their value:<ul>
+        <li>If the element is <code>&quot;F&quot;</code>, replace it with <code>&quot;F#&quot;</code>.</li>
+        <li>If the element is <code>&quot;B&quot;</code>, replace it with <code>&quot;Bb&quot;</code>.</li>
+    </ul>
+    </li>
+</ol>
+<hr>
+<h3 id="-step-10-final-output-"><strong>Step 10: Final Output</strong></h3>
+<ol>
+    <li>Print the <strong>modified version</strong> of <code>myScale</code> to the console.</li>
+</ol>
+<hr>
+<h3 id="-expected-console-output-example-"><strong>Expected Console Output Example</strong></h3>
+<pre><code><span class="hljs-keyword">banana
+</span><span class="hljs-symbol">true</span>
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+<span class="hljs-keyword">added </span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">boolean
+</span><span class="hljs-symbol">object  //NOTE: that typeof will return 'object' when given an array...</span>
+<span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span><span class="hljs-keyword">string
+</span>[<span class="hljs-string">"C"</span>, <span class="hljs-string">"D"</span>, <span class="hljs-string">"E"</span>, <span class="hljs-string">"F"</span>, <span class="hljs-string">"G"</span>, <span class="hljs-string">"A"</span>, <span class="hljs-string">"B"</span>]
+[<span class="hljs-string">"C"</span>, <span class="hljs-string">"D"</span>, <span class="hljs-string">"E"</span>, <span class="hljs-string">"F#"</span>, <span class="hljs-string">"G"</span>, <span class="hljs-string">"A"</span>, <span class="hljs-string">"Bb"</span>]
+</code></pre><hr>
+<h3 id="-submission-steps-"><strong>Submission Steps</strong></h3>
+<ol>
+    <li>Upload your <code>script.js</code> to the Canvas assignment.</li>
+</ol>
+<hr>
+<h2 id="accessing-the-assignment-materials">Accessing the Assignment Materials</h2>
+<ol>
+    <li>Navigate to the assignment repository in the course <a href="https://github.com/MUST4707">GitHub organization</a></li>
+    <li>Click on the green <code>Use this template</code> button in the top right corner.</li>
+    <li>Choose &#39;Create a new repository&#39;</li>
+    <li>Set up the repo name under your account.</li>
+    <li>Click <code>Create repository</code></li>
+</ol>
+<p><em>You should now be at your own personal repository with the assignment materials.</em></p>
+<ol start="6">
+    <li>Click on the green <code>&lt;&gt; Code</code> button and select `Open with GitHub Desktop</li>
+</ol>
+<p><em>You should now be in your GitHub Desktop application that has a pop up window called &#39;Clone a Repository&#39;</em></p>
+<ol start="7">
+    <li>Make sure the local path is where you would like to save this repo.</li>
+    <li>Hit <code>Clone</code></li>
+    <li>You should be able to now click the <code>Open in Visual Studio Code</code> button or navigate to your files and open the folder in Visual Studio Code.</li>
+    <li>After you finish working on your project please return to GitHub Desktop and</li>
+    <li>Commit your changes to the <code>master</code> (don&#39;t to add a summary description)</li>
+    <li>Click on the <code>Push Orgin</code> to sync your commit with the GitHub cloud.</li>
+</ol>
+
+</body>
+</html>
