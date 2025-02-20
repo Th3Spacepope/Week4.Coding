@@ -20,6 +20,18 @@ while (o < myScale.length) {
 }
 console.log(myScale);
 
+
+
+/*
+SMW COMMENT
+These next two while loops and be combined into a single while loop with if and else if statements.
+Iterate through the entire Array just like you do in lines 17.
+
+Also be careful about the difference between = and ==
+= is the assignment operator
+== is the equality test
+
+ */
 while ((myScale[3] = "F")) {
   myScale[3] = "F#";
   if ((myScale[3] = "F#")) {
